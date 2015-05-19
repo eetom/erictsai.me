@@ -42,8 +42,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .big {
     font-size: 30px;
-    font-weight: 100;
-    color: #333333;
+    font-weight: 400;
+    color: #555;
 }
 
 .maintitle {
@@ -357,9 +357,8 @@ a:focus {
 }
 
 .btn-green3 {
-    margin-top: 20px;
+    margin-top: 40px;
     background: #1ED1AF;
-    font-size: .8em;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -369,9 +368,8 @@ a:focus {
 }
 
 .btn-green3:hover {
-    margin-top: 20px;
+    margin-top: 40px;
     background: #15927A;
-    font-size: .8em;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -782,6 +780,7 @@ li {
 .fullscreen-element {
   height: 100vh !important;
 }
+
 .hover-background .background-image-holder,
 .hover-background .foreground-image-holder {
   transition: all 0.3s ease-out;
@@ -811,10 +810,13 @@ li {
 .hero-slider ul.slides{
     margin-bottom: 0px;
 }
-.hero-slider .slides li {
+.hero-slider .slides li { 
   height: 800px;
-  background: url(../img/bg_unsplash2.jpg) no-repeat center center fixed;
+  background: url(../img/mockup4b.png) no-repeat center center fixed;
+  overflow: hidden;
+  width: 100%;
 }
+
 .restrict-hero-height {
   max-height: 700px;
 }
@@ -886,7 +888,7 @@ li {
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 17vh;
+    top: 15vh;
     text-align: center;
     z-index: 1000;
     font-size: 1.5em;
@@ -914,10 +916,6 @@ li {
     font-size: 35%;
 }
 
-.codrops-header .btn-green3 {
-    position: relative;
-    top: 20%;
-}
 
 .codrops-header h1 a:hover,
 .codrops-header h1 a:focus {
@@ -939,6 +937,21 @@ li {
     font-style: normal;
     font-weight: 400;
 }
+
+.codrops-header .subwhite {
+    font-weight: 100;
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.codrops-header .arrow {
+}
+
+.codrops-header .arrow:hover {
+
+}
+
 
 @media all and (max-width: 767px) {
   .codrops-header h1 {
