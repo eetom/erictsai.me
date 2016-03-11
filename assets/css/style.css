@@ -363,12 +363,13 @@ a:focus {
 
 .btn-green3 {
     margin-top: 40px;
+    font-size: 20px;
     background: #1ED1AF;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
     border-radius: 30px;
-    padding: 10px 20px;
+    padding: 10px 30px;
     overflow: hidden;
 }
 
@@ -378,7 +379,7 @@ a:focus {
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding: 10px 20px;
+    padding: 10px 30px;
     overflow: hidden;
 }
 
@@ -811,7 +812,7 @@ li {
     margin-bottom: 0px;
 }
 .hero-slider .slides li { 
-  height: 800px;
+  height: 100vh;
   background: url(../img/mockup4b.png) no-repeat center center fixed;
   overflow: hidden;
   width: 100%;
@@ -920,12 +921,6 @@ li {
 .codrops-header h1 a:hover,
 .codrops-header h1 a:focus {
     color: #fff;
-}
-
-.codrops-header h1 span::before,
-.codrops-header h1 span::after {
-    content: ' ― ';
-    font-weight: 200;
 }
 
 .codrops-header h1 i {
