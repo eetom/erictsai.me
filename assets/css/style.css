@@ -134,7 +134,7 @@ a:focus {
 
 .subtext {
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     color: #1ED1AF;
     padding-left: 10px;
     font-size: 20px;
@@ -177,7 +177,9 @@ a:focus {
     font-weight: 600;
 }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
     color: #1ED1AF;
     font-weight: 600;
     background-color: transparent;
