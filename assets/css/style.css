@@ -137,6 +137,7 @@ a:focus {
     font-weight: 400;
     color: #1ED1AF;
     padding-left: 10px;
+    font-size: 20px;
 }
 
 .navbar {
