@@ -54,7 +54,10 @@ h3.a1 {
 }
 
 .main-logo {
-    height: 30px;
+    float: left;
+    height: 40px;
+    width: 47px;
+    margin-top: 4px;
     padding-right: 10px;
 }
 
