@@ -30,7 +30,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h3.a1 {
-    font-size: 30px !important;
     letter-spacing: 2px;
 }
 
@@ -288,6 +287,13 @@ a:focus {
     margin-bottom: 50px;
 }
 
+.label-custom {
+    background-color: #ff5252;
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
 /* ################################################################
 	SITE WRAPS
 ################################################################# */
@@ -438,7 +444,7 @@ a:focus {
     color: #fff;
     margin: 0;
     padding: 30% 5px 0;
-    font-size: 20px;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
