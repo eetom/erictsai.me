@@ -55,9 +55,10 @@ h3.a1 {
 .main-logo {
     float: left;
     height: 40px;
-    width: 54px;
+    width: 44px;
     margin-top: 4px;
-    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .maintitle h1 span::before,
@@ -967,4 +968,10 @@ li {
   .codrops-header h1 i {
     max-width: 100%
   }  
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-brand{
+        padding-left: 0px;
+    }
 }
