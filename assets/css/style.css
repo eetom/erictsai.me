@@ -946,10 +946,9 @@ li {
 
 .codrops-header h1 i {
     display: block;
-    font-size: 15%;
+    font-size: 2rem;
     max-width: 40%;
     margin: 0 auto;
-    line-height: 2;
     font-style: normal;
     font-weight: 400;
 }
