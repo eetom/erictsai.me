@@ -835,7 +835,7 @@ li {
 }
 .hero-slider .slides li { 
   height: 100vh;
-  background: url(../img/background_home.jpg) no-repeat center center fixed;
+  background: url(../img/mockup4b.png) no-repeat center center fixed;
   overflow: hidden;
   width: 100%;
 }
