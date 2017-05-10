@@ -703,7 +703,7 @@ li {
 
 .companylogo{
     min-height: 100px;
-    border: 1px solid #ccc;
+    border: 1px solid #eee;
     width: 225px;
     display: inline-block;
     margin: 1em;
@@ -742,6 +742,12 @@ li {
 }
 #company10{
     background: url(../img/rlogo10.png) no-repeat;
+}
+#company11{
+    background: url(../img/rlogo11.png) no-repeat;
+}
+#company12{
+    background: url(../img/rlogo12.png) no-repeat;
 }
 
 .space3{
@@ -965,8 +971,11 @@ li {
     font-size: 2.5em;
   }
   .codrops-header h1 i {
-    max-width: 100%
+    max-width: 80%
   }  
+  h2.big {
+    font-size: 3rem;
+  }
 }
 
 @media only screen and (max-width: 767px) {
