@@ -90,6 +90,10 @@ p {
     margin-top: 10px;
 }
 
+p.about-p {
+    margin-top: -8px;
+}
+
 img {
     height: auto;
     max-width: 100%;
@@ -981,6 +985,17 @@ li {
   }
   .mtc2 {
     margin-top: 80px;
+  }
+  p.about-p {
+    margin-top: 15px;
+  }
+  .btn-green2 {
+    margin-top: 30px;
+    display: block;
+    width: 100%;
+  }
+  .contact-mobile-space {
+    margin-bottom: 50px;
   }
 }
 
