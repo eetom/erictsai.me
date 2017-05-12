@@ -312,31 +312,7 @@ a:focus {
 	SITE WRAPS
 ################################################################# */
 
-
-.btn-green {
-    margin: 30px 10px 0 10px;
-    background: #ff5252;
-    font-size: 1em;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-radius: 30px;
-    padding: 10px 20px;
-    overflow: hidden;
-}
-
-.btn-green:hover {
-    margin: 30px 10px 0 10px;
-    background: #cc3333;
-    font-size: 1em;
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 10px 20px;
-    overflow: hidden;
-}
-
-.btn-green2 {
+.btn-rounded {
     margin-top: 20px;
     background: #ff5252;
     font-size: 1em;
@@ -348,7 +324,7 @@ a:focus {
     overflow: hidden;
 }
 
-.btn-green2:hover {
+.btn-rounded:hover, .btn-rounded:focus {
     margin-top: 20px;
     background: #cc3333;
     font-size: 1em;
@@ -359,7 +335,7 @@ a:focus {
     overflow: hidden;
 }
 
-.btn-green3 {
+.btn-homepage {
     margin-top: 40px;
     font-size: 20px;
     background: #ff5252;
@@ -371,36 +347,13 @@ a:focus {
     overflow: hidden;
 }
 
-.btn-green3:hover {
+.btn-homepage:hover, .btn-homepage:focus {
     margin-top: 40px;
     background: #cc3333;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
     padding: 10px 30px;
-    overflow: hidden;
-}
-
-.btn-green_dl {
-    margin-bottom: 50px;
-    background: #ff5252;
-    font-size: 1em;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-radius: 30px;
-    padding: 10px 20px;
-    overflow: hidden;
-}
-
-.btn-green_dl:hover {
-    margin-bottom: 50px;
-    background: #cc3333;
-    font-size: 1em;
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 10px 20px;
     overflow: hidden;
 }
 
@@ -970,6 +923,10 @@ li {
     margin-bottom: 20px;
 }
 
+/*  ################################################################
+    Mobile Responsiveness
+################################################################# */
+
 @media all and (max-width: 767px) {
   .codrops-header h1 {
     font-size: 2.5em;
@@ -989,7 +946,7 @@ li {
   p.about-p {
     margin-top: 15px;
   }
-  .btn-green2 {
+  .btn-rounded {
     margin-top: 30px;
     display: block;
     width: 100%;
