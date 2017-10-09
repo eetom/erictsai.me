@@ -241,6 +241,11 @@ a:focus {
     -webkit-appearance: none;
 }
 
+.mtf {
+    margin-top: 160px;
+    margin-bottom: 70px;
+}
+
 .mtb {
     margin-top: 160px;
     margin-bottom: 150px;
@@ -269,11 +274,6 @@ a:focus {
 .mte {
     margin-top: 100px;
     margin-bottom: 200px;
-}
-
-.mtf {
-    margin-top: 160px;
-    margin-bottom: 70px;
 }
 
 .mb {
