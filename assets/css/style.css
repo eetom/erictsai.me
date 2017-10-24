@@ -931,6 +931,14 @@ li {
     margin-bottom: 20px;
 }
 
+.writing-block {
+  margin-bottom: 40px;
+}
+
+.writing-half-block {
+  padding-left: 0;
+}
+
 /*  ################################################################
     Mobile Responsiveness
 ################################################################# */
