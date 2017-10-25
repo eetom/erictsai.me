@@ -72,7 +72,7 @@
           <p>To fix this I looked it up on stackoverflow and this is the best answer I have found.</p>
 
           <h3 class="writing-subtitle">Step 1: How many commits in are we?</h3>
-          <p class="code">git log</p>
+          <p class="code">user$ git log</p>
           <p>This allows us to check how many commits we want to move. You can read the comment on the commit to see how
           far back you want to roll</p>
           <p class="code">
@@ -89,20 +89,20 @@
           <hr class="writing-rule">
 
           <h3 class="writing-subtitle">Step 2: Discarding the commits temporarily</h3>
-          <p class="code">git reset --keep HEAD~3</p>
+          <p class="code">user$ git reset --keep HEAD~3</p>
           <p>This discards the "3" most recent commits temporarily because it doesn't "throw away" the changes, change
           this number to the number of commits you want to roll back</p>
 
           <hr class="writing-rule">
 
           <h3 class="writing-subtitle">Step 3: Creating a new branch</h3>
-          <p class="code">git checkout -t -b newbranchname</p>
+          <p class="code">user$ git checkout -t -b newbranchname</p>
           <p>This creates and switches to a new branch based off of the new master branch that has been rolled back</p>
 
           <hr class="writing-rule">
 
           <h3 class="writing-subtitle">Step 4: Cherry pick it</h3>
-          <p class="code">git cherry-pick ..HEAD@{2}</p>
+          <p class="code">user$ git cherry-pick ..HEAD@{2}</p>
           <p>This is the magical step that moves the temporarily discarded commits into the new branch we moved to,
             It's important to only use {2} because this denotes the action that happen 2 steps ago, not the number
           of commites we're bringing back</p>
