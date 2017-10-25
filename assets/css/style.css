@@ -573,7 +573,7 @@ csmall2 {
 
 /* Contact Page */
 #contactwrap {
-  background: url(../img/contact.png) no-repeat center top;
+  background: url("https://eetom.github.io/img/img7-bw.jpg") no-repeat center top;
   margin-top: 60px;
   padding-top: 0px;
   text-align: center;
@@ -866,7 +866,7 @@ li {
 }
 .hero-slider .slides li { 
   height: 100vh;
-  background: url(../img/mockup4b.png) no-repeat center center fixed;
+  background: url(../img/mockup4-wb.png) no-repeat center center fixed;
   overflow: hidden;
   width: 100%;
 }
