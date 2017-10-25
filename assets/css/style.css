@@ -283,6 +283,11 @@ a:focus {
     margin-bottom: 180px;
 }
 
+.mtd-2 {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
 .mte {
     margin-top: 100px;
     margin-bottom: 200px;
@@ -574,7 +579,7 @@ csmall2 {
   text-align: center;
   background-attachment: relative;
   background-position: center center;
-  min-height: 400px;
+  min-height: 300px;
   width: 100%;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
@@ -586,6 +591,45 @@ csmall2 {
   background-size: cover;
 }
 
+/* About Page */
+#aboutwrap {
+  background: url("https://eetom.github.io/img/img1-bw.jpg") no-repeat center top;
+  margin-top: 60px;
+  padding-top: 0px;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 300px;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Writing Page */
+#writingwrap {
+  background: url("https://eetom.github.io/img/img4-bw.jpg") no-repeat center top;
+  margin-top: 60px;
+  padding-top: 0px;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 300px;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .carousel-indicators {
   position: absolute;
   bottom: -60px;
