@@ -86,14 +86,20 @@
           Date:   Tue Oct 24 19:59:44 2017 -0700<br>
           This is fine, leave this in master</p>
 
+          <hr class="writing-rule">
+
           <h3 class="writing-subtitle">Step 2: Discarding the commits temporarily</h3>
           <p class="code">git reset --keep HEAD~3</p>
           <p>This discards the "3" most recent commits temporarily because it doesn't "throw away" the changes, change
           this number to the number of commits you want to roll back</p>
 
+          <hr class="writing-rule">
+
           <h3 class="writing-subtitle">Step 3: Creating a new branch</h3>
           <p class="code">git checkout -t -b newbranchname</p>
           <p>This creates and switches to a new branch based off of the new master branch that has been rolled back</p>
+
+          <hr class="writing-rule">
 
           <h3 class="writing-subtitle">Step 4: Cherry pick it</h3>
           <p class="code">git cherry-pick ..HEAD@{2}</p>

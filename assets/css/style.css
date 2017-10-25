@@ -94,6 +94,18 @@ p.about-p {
     margin-top: -8px;
 }
 
+p.code {
+  font-family: 'Courier', 'Monaco';
+  padding: 10px;
+  background-color: #dddddd;
+  font-size: 16px;
+}
+
+h3.writing-subtitle {
+  font-weight: 600;
+  padding: 10px 0;
+}
+
 img {
     height: auto;
     max-width: 100%;
@@ -311,6 +323,10 @@ a:focus {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 0px;
+}
+
+hr.writing-rule {
+  margin: 30px 0;
 }
 
 /* ################################################################
