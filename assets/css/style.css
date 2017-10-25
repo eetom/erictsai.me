@@ -16,40 +16,40 @@
 }
 
 body {
-    background: #ffffff;
-    margin: 0;
-    height: 100%;
-    color: #384452;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
+  background: #ffffff;
+  margin: 0;
+  height: 100%;
+  color: #384452;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
 }
 
 h3.a1 {
-    letter-spacing: 2px;
+  letter-spacing: 2px;
 }
 
-// .big {
-//     font-size: 35px;
-//     line-height: 1.4;
-//     font-weight: 400;
-//     color: #555;
-// }
+/*.big {
+  font-size: 35px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #555;
+}*/
 
 .title-spacing {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .maintitle {
-    font-size: 45px;
-    font-weight: 700;
-    color: #fff;
-    margin: 0 auto;
-    line-height: 2;
+  font-size: 45px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 auto;
+  line-height: 2;
 }
 
 .main-logo {
@@ -94,7 +94,7 @@ p.about-p {
     margin-top: -8px;
 }
 
-p.code {
+p.code-box {
   font-family: 'Courier', 'Monaco';
   padding: 10px;
   background-color: #dddddd;
