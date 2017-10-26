@@ -334,6 +334,10 @@ hr.writing-rule {
   margin: 30px 0;
 }
 
+.skills-item {
+  margin: 15px 0;
+}
+
 /* ################################################################
   SITE WRAPS
 ################################################################# */
@@ -1029,6 +1033,9 @@ li {
   }
   .contact-mobile-space {
     margin-bottom: 50px;
+  }
+  .skills-item {
+  margin: 50px 0;
   }
 }
 
