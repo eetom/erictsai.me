@@ -290,7 +290,7 @@ a:focus {
 
 .mte {
     margin-top: 100px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .mb {
@@ -781,24 +781,28 @@ li {
   background: url(../img/rlogo12.png) no-repeat;
 }
 
-.space3{
+.space3 {
   margin-bottom: 3em;
 }
 
-.space4{
+.space4 {
   margin-top: 2em;
 }
 
-.space5{
+.space5 {
   margin-bottom: 2em;
 }
 
-.link2{
+.link2 {
   font-size: 22px;
   font-weight: 400;
 }
 
-.category{
+.other-proj-items {
+  margin: 20px 0;
+}
+
+.category {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 13px;
