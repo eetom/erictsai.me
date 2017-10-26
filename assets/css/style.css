@@ -318,7 +318,11 @@ a:focus {
     background-color: #ff5252;
     font-weight: 400;
     font-size: 16px;
-    margin-right: 5px;
+    margin: 10px 5px 10px 0;
+}
+
+.category-label-sections {
+  margin: 10px 0 15px 0;
 }
 
 .breadcrumb {
@@ -799,7 +803,7 @@ li {
   font-size: 13px;
   color: #999;
   letter-spacing: 2px;
-  margin-bottom: -15px;
+  margin-bottom: 0px;
 }
 
 /*here is some extra styling - clean up later*/
