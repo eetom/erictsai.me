@@ -885,7 +885,7 @@ li {
 
 @media all and (max-width: 767px) {
   .hero-slider .slides li {
-    height: 550px;
+    height: 100%;
   }
 }
 .hero-slider {
