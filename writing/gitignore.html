@@ -60,65 +60,80 @@
     <div class="container mtf">
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 centered">
-          <p class="subtag">See the World</p>
+          <p class="subtag">Learning Git</p>
           <hr>
-          <h1 class="subtitle">Pack Lighter - Travel Happier</h1>
+          <h1 class="subtitle">.gitignore and the dreaded .DS_store</h1>
           <p class="title-spacing">Last Updated: 10/31/2017</p>
         </div>
         <div class="col-lg-6 col-md-6 col-lg-offset-3 col-md-offset-3 align-left">
-          <p>Everyone has different ways they like to enjoy travel, some people like to have very fun-filled exhausting schedules,
-          while others like to relax and play by ear. No matter how you enjoy travel being adaptable and prepared will always let you
-          focus more on what you enjoy more. In other words, pack lighter to travel happier!</p>
+          <p>If you ever use a Mac for your web developing needs, you might see a certain file that shows up from time to time.
+          The .DS_Store file is a file created by the Mac operating system that stores custom attributes of the folder kinda like
+          a metadata of what has been changed about that folder. The problem is that this becomes annoying when using a version
+          control process (such as Git) that you will have to constantly add and commit this even when you have made no code change you
+          might have .DS_Store changes to update.</p>
 
-          <p>The best way I have found to increase my happiness traveling is to pack efficiently. I focus on only what I
-          really need and this differs from person to person. We all have different levels of comfort we want to travel, not
-          everyone will want to live out of a backpack for a few weeks, but the key is to not over pack and be weighed down (both
-          physically and mentally) by the stuff you bring.</p>
+          <p>The solution is in the .gitignore file!</p>
+          <p>The .gitignore file is primarily used for Git version control to igonre files that the user does not want it to 
+          track changes. This makes it perfect for the use of managing the dreaded .DS_Store files (yes <strong>files</strong>, each folder 
+          will have it's own .DS_Store file)
+          </p>
 
-          <h3 class="writing-subtitle">Step 1: How many days will you be there?</h3>
-          <p>This is usually the first question I ask myself, how many days of clothing will I need, how many shirts, pants, underwear, etc.
-          The follow up question to this would be, will there be laundry where I'm staying.</p>
+          <h3 class="writing-subtitle">Step 1: Create a .gitignore file</h3>
 
-          <p>Even for longer trips, I try not have too much clothing with me, just because I don't want to carry around dirty laundry clothes
-          with me while I travel. I'd rather have few clothing but find ways to clean it (In-suite laundry, coin-op laundry centre, hand wash, etc.)</p>
+          <p>The first thing to do will be to create the .gitignore file</p>
+          <p>Check out a previous post on <a href="writing/basiccommandline.html">Command line basics for Designers</a> for some help with 
+          command line to generate a .gitignore file.</p>
 
-          <p>This really lightens up your packing, as clothing is usually the bulk of what most people bring.</p>
+          <p>Start in the git repository folder you wish to create the .gitignore file in. Then type in...</p>
+          <p class="code">User$ touch .gitignore</p>
 
-          <hr class="writing-rule">
-
-          <h3 class="writing-subtitle">Step 2: Packing for multiple scenario use</h3>
-          <p>One of the ways you can pack less is to not have items that have only "one scenario use", for example, shorts for men can also be used for swimming trunks, you can always wear the shorts even if you don't take them swimming and only need to bring one instead of two things. Sometimes when I come back from my travels, I think about all the excess things I brought that I didn't use or only used once. This is really hard to avoid but it can greatly increase your packing efficiency.</p>
-
-          <p>Will it be rainy? (Pack a light rain jacket that can double as a jacket for a night out). Will it be warm? (Pack shorts and tank tops that can be used to sleep in or light exercise). Will it be cold? (Bring a heavier jacket and a sweater that can rollup as a travel pillow).</p>
+          <p>Now you have an empty .gitignore file</p>
 
           <hr class="writing-rule">
 
-          <h3 class="writing-subtitle">Step 3: It's not just what you bring, it's also how you bring it</h3>
-          <p>Packing light and efficient clothing is great and all, but once you have all your things picked out, don't just shove it into your bag!</p>
-          <p>Part of what makes traveling so frustrating is find the things you need when you need it, wether it's that sock that stuck at the bottom of your pack,
-          or all your electronic's cables that tangle up everywhere in the front pocket.</p>
+          <h3 class="writing-subtitle">Step 2: Let the .gitignore file ignore .DS_Store files</h3>
 
-          <p>There are a lot of guides online about how to roll and fold your clothing into packing cubes that make managing clothes a lot easier. And the same go
-          for electronics and toiletries. Make sure to compartmentalize and separate things inside your bag. You'll thank yourself later when you are looking for
-          a clean shirt don't have to dig through sunscreen and charging cables.</p>
+          <p>Now that we have a .gitignore file we can start telling Git what to ignore! Open up the .gitignore file
+          in your favorite IDE/text editor and add in ...</p>
 
-          <hr class="writing-rule">
+          <p class="code">.DS_Store</p>
 
-          <h3 class="writing-subtitle">Step 4: Break the rules sometimes</h3>
-
-          <p>Sometimes you can't help but pack a few things that are only single scenario use and that's ok. Achieving some level of efficient and smart packing
-          is already a pretty good start. Something that I've learnt over the years is to have what are "luxary" items. These are items that break
-          the rules in some way but are there to help you enjoy your trip more. For example maybe you want to bring a bigger camera with multiple lenses even though your smartphone takes great photos, or a long flowy dress that you would only wear once for a special dinner with friends, I even read about a guy who's luxary item was a electronic head massager to help him on long haul flights.</p>
-
-          <p> These are important because traveling is for you, and having one or two things that break the packing rules but can make your trip that much more
-          personal and enjoyable are highly recommended. Just don't go overboard!</p>
+          <p>And then save. Then you're done! Well, almost...?</p>
 
           <hr class="writing-rule">
 
-          <p>Over all, I found that as I took more care and effort to pack lighter and more efficiently, the easier traveling became. I stopped bring check-in baggage
-          and now only bring carry-on and breeze through the airport. I stopped having so much clothing I didn't need and losing socks and smaller things that 
-          were shoved into my bag last minute. There's a certain mental clarity that comes with knowing that you are prepared and are more focused on enjoying
-          the trip. So remember to pack lighter and travel happier :)</p>
+          <h3 class="writing-subtitle">Step 3 Optional: Untracking tracked .DS_Store files</h3>
+
+          <p>Just setting up the .gitignore is not enough if you have already started to track .DS_Store
+          in a previous commit. You have to stop git from tracking it for .gitignore to take effect. Go
+          back to terminal and the directory and type in ...</p>
+
+          <p class="code">User$ git rm --cached .DS_Store</p>
+
+          <hr class="writing-rule">
+
+          <h3 class="writing-subtitle">Step 4 Optional: The Nuclear option - Global .gitignore</h3>
+
+          <p>That's right, we're sick and tired of having to do this for every repository we create. It's time
+          once and for all to show .DS_Store who's boss. Github help files suggest using this line in your terminal
+          to create a global .gitignore...</p>
+
+          <p class="code">User$ git config --global core.excludesfile ~/.gitignore_global</p>
+
+          <p>And then once again, open up the file in a text editor/IDE and add the line...</p>
+
+          <p class="code">.DS_Store</p>
+
+          <p>This should take care of your .DS_Store issues for good! Make sure to untrack (Step 3 optional) any
+          .DS_Store files that are already being tracked when you do this as well!</p>
+
+          <hr class="writing-rule">
+      
+          <p>Resources used to write this post: <br> 
+            <a href="https://en.wikipedia.org/wiki/.DS_Store">.DS_Store, From Wikipedia</a> <br>
+            <a href="https://help.github.com/articles/ignoring-files/">Using Git / Ignoring files, from Github</a> <br>
+            Also check out Octocat's sample .gitignore file <a href="https://gist.github.com/octocat/9257657">octocat/.gitignore</a>
+          </p>
 
           <p class="spacing"><a href="../writing.html"><i class="fa fa-angle-left" aria-hidden="true"></i> Back to Writing</a></p>
         </div>
