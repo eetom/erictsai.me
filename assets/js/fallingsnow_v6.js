@@ -31,8 +31,6 @@ var resetPosition = false;
 function setup() {
 	window.addEventListener("DOMContentLoaded", generateSnowflakes, false);
 	window.addEventListener("resize", setResetFlag, false);
-
-    document.getElementById("snowflakeContainer").innerHTML = 12302302032030320;
 }
 setup();
 
