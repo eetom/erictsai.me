@@ -129,6 +129,12 @@ a:focus {
     color: #cc3333;
 }
 
+strike a {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.4;
+}
+
 ::-moz-selection {
     color: #fff;
     text-shadow: none;
