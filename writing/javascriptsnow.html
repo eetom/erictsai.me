@@ -72,65 +72,127 @@
 
           <img src="assets/img/snowflake_homepage.png" alt="">
 
-          <p>The solution is in the .gitignore file!</p>
-          <p>The .gitignore file is primarily used for Git version control to igonre files that the user does not want it to 
-          track changes. This makes it perfect for the use of managing the dreaded .DS_Store files (yes <strong>files</strong>, each folder 
-          will have it's own .DS_Store file)
+          <p>Most of the steps you need will be on the tutorial website, but here are a few tips that I have found
+          to make it a bit easier <i class="fa fa-smile-o" aria-hidden="true"></i>.</p>
+
+          <h3 class="writing-subtitle">Step 1: Add all the assets</h3>
+
+          <p>For this method of adding JS snowflakes, you'll need the CSS and JS file from the tutorial site.
           </p>
 
-          <h3 class="writing-subtitle">Step 1: Create a .gitignore file</h3>
+          <p>Here is the CSS file .. </p>
+          <p class="code">
+            /*SNOW EFFECT STYLES*/ <br />
+            #snowflakeContainer { <br />
+                position: absolute; <br />
+                left: 0px; <br />
+                top: 0px; <br />
+            } <br />
+            .snowflake { <br />
+                padding-left: 15px; <br />
+                font-family: Cambria, Georgia, serif; <br />
+                font-size: 14px; <br />
+                line-height: 24px; <br />
+                position: fixed; <br />
+                color: #FFFFFF; <br />
+                user-select: none; <br />
+                z-index: 1000; <br />
+            } <br />
+            .snowflake:hover { <br />
+                cursor: default; <br />
+            } <br />
+          </p>
 
-          <p>The first thing to do will be to create the .gitignore file</p>
-          <p>Check out a previous post on <a href="writing/basiccommandline.html">Command line basics for Designers</a> for some help with 
-          command line to generate a .gitignore file.</p>
+          <p>To make changes to the visuals of your snowflake, adjust the <span class="code">font-size</span> in <span class="code">.snowflake</span>, increase the font size for a larger snowflake. Change the <span class="code">color</span> to change the color of the snowflake.</p>
 
-          <p>Start in the git repository folder you wish to create the .gitignore file in. Then type in...</p>
-          <p class="code">User$ touch .gitignore</p>
+          <p>Now downaload a copy of the Javascript file..</p>
+          <button><a href="https://www.kirupa.com/js/fallingsnow_v6.zip">EXTERNAL FILE DOWNLOAD</a></button>
+          <p>It's a legthy file, so we wont show the entire code here, but we can go over a few of the highlights.
+            The file was created by <a href="https://www.kirupa.com/me/index.htm">Kuripa</a> and is very well
+            annotated and explains how each step works.</p>
 
-          <p>Now you have an empty .gitignore file</p>
+          <p>One of the more fun variable to change is the <span class="code">numberOfSnowflakes</span>, it - as the name describes - determine the number of snowflakes on the screen at one time. I've got mine set to 100.</p>
+
+          <p class="code">
+            // Specify the number of snowflakes you want visible <br />
+            var numberOfSnowflakes = 100; <br />
+          </p>
+
+          <p>Another cool section to look at is the controls for the <span class="code">speed</span> and <span class="code">radius</span> of the snowflakes. Each snowflake is randomly generated and have different sizes and speeds. The code uses the <span class="code">Math.random()</span> function to randomize each snowflake. For example
+          the radius of the snowflake is determined by <span class="code">4+Math.random()*10</span> this allows for a number between 1 and 0 that is then multiplied by 10 and then add 4, for a range of 4 to 14.</p>
+
+          <p class="code">
+            var speed = 5+Math.random()*40; <br />
+            var radius = 4+Math.random()*10; <br />
+          </p>
 
           <hr class="writing-rule">
 
-          <h3 class="writing-subtitle">Step 2: Let the .gitignore file ignore .DS_Store files</h3>
+          <h3 class="writing-subtitle">Step 2: Connecting it to your website</h3>
 
-          <p>Now that we have a .gitignore file we can start telling Git what to ignore! Open up the .gitignore file
-          in your favorite IDE/text editor and add in ...</p>
+          <p>Now that we have both the CSS and JS file we can get it to work with your website. To do this we'll need
+          to add it to your website's HTML code.</p>
 
-          <p class="code">.DS_Store</p>
+          <p>First let's add the CSS file, I have the CSS file saved in my site's CSS folder, then I
+          add the file by linking it in the HTML page <span class="code">&lt;head&gt;</span> section I want the snowflakes to show up in..</p>
 
-          <p>And then save. Then you're done! Well, almost...?</p>
+          <p class="code">
+            &lt;head&gt;<br />
+            <br />
+            &lt;link href="your-path-to-the-css-file/snow.css" rel="stylesheet"&gt;<br />
+            other code ..
+          </p>
+
+          <p>Then the next step is to add the JS file to the HTML page..</p>
+
+          <p class="code">
+            other code ..<br />
+            <br />
+            &lt;script src="your-path-to-the-js-file/fallingsnow_v6.js"&gt;&lt;/script&gt;<br />
+            &lt;/body&gt;
+          </p>
+
+          <p>I tend to add JS script files at the bottom of my html so it doesn't slow down the rest of the HTML content from loading first</p>
 
           <hr class="writing-rule">
 
-          <h3 class="writing-subtitle">Step 3 Optional: Untracking tracked .DS_Store files</h3>
+          <h3 class="writing-subtitle">Step 3: Add a &lt;div&gt; for the snowflake</h3>
 
-          <p>Just setting up the .gitignore is not enough if you have already started to track .DS_Store
-          in a previous commit. You have to stop git from tracking it for .gitignore to take effect. Go
-          back to terminal and the directory and type in ...</p>
+          <p>We're almost finished! If you load the page now.. no snowflakes happen. Why is that? It's because we need
+          to have a element for the javascript to add and remove the snowflakes from. To do this we'll need to create
+          a new <span class="code">&lt;div&gt;</span> before the <span class="code">&lt;body&gt;</span> tag in your
+          HTML page.</p>
 
-          <p class="code">User$ git rm --cached .DS_Store</p>
+          <p class="code">
+              &lt;body&gt; <br />
+              <br />
+                &lt;div id="snowflakeContainer"&gt; <br />
+                  &lt;p class="snowflake"&gt;*&lt;/p&gt; <br />
+                &lt;/div&gt;<br />
+            <br />    
+              ... the rest of your code  
+          </p>
+
+          <p>This creates a <span class="code">&lt;div&gt;</span> that is locked to the top of your browser page
+          and covers the entire screen. This is where the JS file will put new snowflakes on top of the rest of the content. Now that you have all of it combined refresh the site and you should see some
+          wonderful snow effect!</p>
 
           <hr class="writing-rule">
 
-          <h3 class="writing-subtitle">Step 4 Optional: The Nuclear option - Global .gitignore</h3>
+          <p>And that's it, all you need to add some holiday cheer to winterize your webpage. The key things
+          to note are ..</p>
 
-          <p>That's right, we're sick and tired of having to do this for every repository we create. It's time
-          once and for all to show .DS_Store who's boss. Github help files suggest using this line in your terminal
-          to create a global .gitignore...</p>
-
-          <p class="code">User$ git config --global core.excludesfile ~/.gitignore_global</p>
-
-          <p>And then once again, open up the file in a text editor/IDE and add the line...</p>
-
-          <p class="code">.DS_Store</p>
-
-          <p>This should take care of your .DS_Store issues for good! Make sure to untrack (Step 3 optional) any
-          .DS_Store files that are already being tracked when you do this as well!</p>
+          <ol>
+            <li>Add in the asset files - CSS and JS</li>
+            <li>Link it in the HTML so it can be loaded</li>
+            <li>Add the HTML code it needs to show up on the page</li>
+          </ol>
 
           <hr class="writing-rule">
       
           <p>Resources used to write this post: <br> 
-            <a href="https://www.kirupa.com/html5/the_falling_snow_effect.htm">.DS_Store, From Wikipedia</a>
+            <a href="https://www.kirupa.com/html5/the_falling_snow_effect.htm">Kirupa - The Falling Snow Effect</a> <br />
+            Special thanks for the tutorial and providing assets.
           </p>
 
           <p class="spacing"><a href="../writing.html"><i class="fa fa-angle-left" aria-hidden="true"></i> Back to Writing</a></p>

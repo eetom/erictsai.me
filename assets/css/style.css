@@ -33,13 +33,6 @@ h3.a1 {
   letter-spacing: 2px;
 }
 
-/*.big {
-  font-size: 35px;
-  line-height: 1.4;
-  font-weight: 400;
-  color: #555;
-}*/
-
 .title-spacing {
   margin-bottom: 30px;
 }
@@ -97,6 +90,13 @@ p.about-p {
 p.code {
   font-family: 'Courier', 'Monaco';
   padding: 10px;
+  background-color: #dddddd;
+  font-size: 16px;
+}
+
+span.code {
+  font-family: 'Courier', 'Monaco';
+  padding: 4px 6px;
   background-color: #dddddd;
   font-size: 16px;
 }
@@ -680,12 +680,13 @@ a.disabled {
   color: #bbbbbb;
 }
 
-ul {
+ul, ol  {
   font-size: 18px;
   margin-top: 20px;
 }
 
 li {
+  font-weight: 400;
   margin-top: 10px;
 }
 
@@ -1033,6 +1034,34 @@ td, th {
 
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+button {
+  background: #ff5252;
+  font-size: 1em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  overflow: hidden;
+}
+
+button:hover,
+button:active,
+button:focus {
+  background: #cc3333;
+  font-size: 1em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  overflow: hidden;
+}
+
+button a, button a:hover, button a:focus {
+  color: #fff;
 }
 
 /*  ################################################################
