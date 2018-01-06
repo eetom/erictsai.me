@@ -1019,6 +1019,8 @@ li {
 }
 
 table {
+    font-size: 16px;
+    font-weight: 400;
     border-collapse: collapse;
     width: 100%;
 }
