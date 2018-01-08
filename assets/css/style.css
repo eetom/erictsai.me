@@ -1037,7 +1037,7 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
-button {
+button.writing-button {
   background: #ff5252;
   font-size: 1em;
   color: #fff;
@@ -1048,9 +1048,9 @@ button {
   overflow: hidden;
 }
 
-button:hover,
-button:active,
-button:focus {
+button.writing-button:hover,
+button.writing-button:active,
+button.writing-button:focus {
   background: #cc3333;
   font-size: 1em;
   color: #fff;
@@ -1061,7 +1061,7 @@ button:focus {
   overflow: hidden;
 }
 
-button a, button a:hover, button a:focus {
+button.writing-button a, button.writing-button a:hover, button.writing-button a:focus {
   color: #fff;
 }
 
