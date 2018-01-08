@@ -683,6 +683,7 @@ a.disabled {
 ul, ol  {
   font-size: 18px;
   margin-top: 20px;
+  padding-left: 20px;
 }
 
 li {
