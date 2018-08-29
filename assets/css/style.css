@@ -155,11 +155,6 @@ strike a {
   BOOTSTRAP MODIFICATIONS & TWEAKS
 ################################################################# */
 
-.title {
-    font-size: 20px;
-    color: #ffffff;
-}
-
 .subtext {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
@@ -198,6 +193,8 @@ strike a {
     color: white;
     font-weight: 600;
     font-size: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
