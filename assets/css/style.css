@@ -447,14 +447,14 @@ hr.writing-rule {
   color: #fff;
   margin: 0;
   padding: 30% 5px 0;
-  font-size: 3rem;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
 .tpl6 .dmbutton {
   display: inline-block;
   margin: 0px 5px 20px 5px;
-  font-size: 18px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -724,6 +724,10 @@ li {
   margin-right: 10px;
 }
 
+.img-border {
+  border: 1px solid #999;
+}
+
 .subgrey1 {
   font-weight: 100;
   font-size: 25px;
@@ -739,7 +743,8 @@ li {
 .companylogo{
   min-height: 100px;
   border: 1px solid #fff;
-  width: 225px;
+  width: 20%;
+  min-width: 230px;
   display: inline-block;
   margin: 1em;  
 }
@@ -976,7 +981,7 @@ li {
 /*Header Style*/
 
 /* Header */
-.codrops-header {
+.top-header {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -986,10 +991,27 @@ li {
     font-size: 1.5em;
 }
 
-.codrops-header h1 {
+.top-header h1 {
     position: absolute;
     font-weight: 600;
     font-size: 1.5em;
+    line-height: 1.4;
+    color: #fff;
+    z-index: 1000;
+    padding: 10rem;
+    margin: 0 0 0 0;
+    left: 0;
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 5px;*/
+    width: 100%;
+    -webkit-transform: translate3d(0,-95%,0);
+    transform: translate3d(0,-95%,0);
+}
+
+.top-header h2 {
+    position: absolute;
+    font-weight: 600;
+    font-size: 1.4em;
     line-height: 1.4;
     color: #fff;
     z-index: 1000;
@@ -1003,17 +1025,19 @@ li {
     transform: translate3d(0,-35%,0);
 }
 
-.codrops-header h1 span {
-    display: block;
-    font-size: 35%;
+.down-chev {
+    font-size: 1.6em;
+    color: #fff;
+    -webkit-transform: translate3d(0,775%,0);
+    transform: translate3d(0,775%,0); 
 }
 
-.codrops-header h1 a:hover,
-.codrops-header h1 a:focus {
+.top-header h1 a:hover,
+.top-header h1 a:focus {
     color: #fff;
 }
 
-.codrops-header h1 i {
+.top-header h1 i {
     display: block;
     font-size: 2rem;
     max-width: 40%;
@@ -1022,7 +1046,7 @@ li {
     font-weight: 400;
 }
 
-.codrops-header .subwhite {
+.top-header .subwhite {
     font-weight: 100;
     font-size: 25px;
     color: #fff;
@@ -1090,13 +1114,13 @@ button.writing-button a, button.writing-button a:hover, button.writing-button a:
 
 /* Medium devices (tablets, less than 992px)*/
 @media all and (max-width: 991px) {
-  .codrops-header h1 {
+  .top-header h1 i {
+    max-width: 80%
+  }  
+  .top-header h2 {
     font-size: 1.2em;
     padding: 0 12px;
   }
-  .codrops-header h1 i {
-    max-width: 80%
-  }  
   h1.subtitle {
     font-size: 3rem;
   }
