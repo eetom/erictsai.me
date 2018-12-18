@@ -1032,7 +1032,7 @@ li {
 }
 
 .writing-link {
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 table {
@@ -1093,14 +1093,14 @@ button.writing-button a, button.writing-button a:hover, button.writing-button a:
   }
   .top-header h1 {
     font-size: 1.6em;
-    -webkit-transform: translate3d(0,-95%,0);
-    transform: translate3d(0,-95%,0);
+    -webkit-transform: translate3d(0,-90%,0);
+    transform: translate3d(0,-90%,0);
   }  
   .top-header h2 {
     font-size: 1em;
     padding: 0 12px;
-    -webkit-transform: translate3d(0,-15%,0);
-    transform: translate3d(0,-15%,0);
+    -webkit-transform: translate3d(0,-10%,0);
+    transform: translate3d(0,-10%,0);
   }
   h1.subtitle {
     font-size: 3rem;
@@ -1128,6 +1128,15 @@ button.writing-button a, button.writing-button a:hover, button.writing-button a:
   .align-about-items {
     text-align: center;
   }
+  .writing-block {
+    margin-left: 0px;
+  }
+  .skills-item {
+    text-align: center;
+  }
+  #service2 p.subtag {
+    text-align: center;
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -1146,10 +1155,14 @@ button.writing-button a, button.writing-button a:hover, button.writing-button a:
   }
   .top-header h2 {
     width: 90%;
-    color: red;
   }
   .port-img-new, .port-img-old, .company-img {
     width: 100%;
+    font-size: 1.5em;
+  }
+  .port-img-new h4, .port-img-old h4 {
+    font-size: 1.2em;
+  }
 }
 
 @media (max-width: 374px) {
