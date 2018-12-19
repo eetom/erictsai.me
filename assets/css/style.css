@@ -1145,6 +1145,9 @@ button.writing-button a, button.writing-button a:hover, button.writing-button a:
   #service2 p.subtag {
     text-align: center;
   }
+  .subtag {
+    font-size: 2rem;
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
