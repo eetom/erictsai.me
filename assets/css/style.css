@@ -343,6 +343,10 @@ hr.writing-rule {
   margin-bottom: 35px;
 }
 
+.company-gap > div {
+  margin-bottom: 10px;
+}
+
 .image-holder {
   background-color: #f1f1f1;
   margin-right: 2%;
@@ -1166,6 +1170,9 @@ button.writing-button a, button.writing-button a:hover, button.writing-button a:
   }
   .port-img-new h4, .port-img-old h4 {
     font-size: 1.2em;
+  }
+  .company-img .image-holder {
+    height: 85px;
   }
 }
 
