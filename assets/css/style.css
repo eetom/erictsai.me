@@ -406,6 +406,10 @@ hr.writing-rule {
   border: 1px solid #ddd;
 }
 
+.port-img-new .image-holder, .port-img-old .image-holder {
+  border: 1px solid #ddd;
+}
+
 
 
 /* ################################################################
