@@ -22,6 +22,7 @@
     margin: 0;
     padding: 0px;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
 }
 
 body {
@@ -38,6 +39,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h3.a1 {
   letter-spacing: 2px;
+}
+
+h4 a{
+  font-size: 20px;
 }
 
 .title-spacing {
@@ -113,26 +118,21 @@ h3.writing-subtitle {
 }
 
 img {
-    height: auto;
-    max-width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 a {
-    padding: 0;
-    margin: 0;
-    text-decoration: underline;
-    color: #ff5252;
-    /*-webkit-transition: background-color .4s linear, color .4s linear;
-    -moz-transition: background-color .4s linear, color .4s linear;
-    -o-transition: background-color .4s linear, color .4s linear;
-    -ms-transition: background-color .4s linear, color .4s linear;
-    transition: background-color .4s linear, color .4s linear;*/;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: #ff5252;
 }
 
 a:hover,
 a:focus {
-    /*text-decoration: none;*/
-    color: #cc3333;
+  text-decoration: underline;
+  color: #cc3333;
 }
 
 strike a {
